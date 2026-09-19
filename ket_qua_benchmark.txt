@@ -1,0 +1,154 @@
+Strategy: HeadingChunker
+Loaded 69 chunks from 10 selected documents.
+Embedding backend: mock (MD5-based; rankings are not semantic evidence).
+
+Q1. Người dùng được mượn tối đa bao nhiêu sách và trong bao lâu?
+  filter={'audience': 'student'}; gold=huit-library-faq; marker='tối đa 3 quyển'
+  1. score=0.303 doc_id=huit-library-faq chunk=6 marker=False
+  2. score=0.246 doc_id=huit-library-faq chunk=2 marker=False
+  3. score=0.190 doc_id=huit-library-faq chunk=0 marker=False
+  A/B (without filter): huit-library-faq, huit-library-faq, huit-library-faq
+
+Q2. Sách tham khảo của VNUA được mượn bao nhiêu cuốn, trong bao lâu và gia hạn thế nào?
+  filter=None; gold=vnua-library-borrowing; marker='5 cuốn/20 ngày'
+  1. score=0.415 doc_id=thu-tuc-thanh-toan-ra-truong chunk=3 marker=False
+  2. score=0.205 doc_id=ftu-library-rules chunk=4 marker=False
+  3. score=0.191 doc_id=huit-library-faq chunk=2 marker=False
+
+Q3. Dịch vụ mượn liên thư viện HUIT cho mượn bao nhiêu tài liệu và thời hạn bao lâu?
+  filter=None; gold=huit-interlibrary-loan; marker='2 tài liệu/1 lần mượn'
+  1. score=0.345 doc_id=huit-library-faq chunk=9 marker=False
+  2. score=0.263 doc_id=haui-library-policy chunk=8 marker=False
+  3. score=0.212 doc_id=huit-self-check chunk=0 marker=False
+
+Q4. Sinh viên cần làm gì để hoàn tất thanh toán thư viện trước khi ra trường?
+  filter={'audience': 'student'}; gold=thu-tuc-thanh-toan-ra-truong; marker='Trả sách đang mượn'
+  1. score=0.338 doc_id=quy-dinh-lam-the-ban-doc chunk=2 marker=False
+  2. score=0.286 doc_id=huit-library-faq chunk=11 marker=False
+  3. score=0.119 doc_id=thu-tuc-thanh-toan-ra-truong chunk=3 marker=False
+  A/B (without filter): quy-dinh-lam-the-ban-doc, huit-library-faq, ftu-library-rules
+
+Q5. Gia hạn tài liệu tự động được thực hiện theo các bước nào?
+  filter={'audience': 'student'}; gold=huit-self-check; marker='Chọn nút GIA HẠN'
+  1. score=0.252 doc_id=huit-self-check chunk=0 marker=False
+  2. score=0.189 doc_id=huit-library-faq chunk=16 marker=False
+  3. score=0.178 doc_id=huit-library-faq chunk=14 marker=False
+  A/B (without filter): huit-self-check, ftu-library-rules, huit-library-faq
+
+========================================================================
+
+Strategy: FixedSizeChunker
+Loaded 74 chunks from 10 selected documents.
+Embedding backend: mock (MD5-based; rankings are not semantic evidence).
+
+Q1. Người dùng được mượn tối đa bao nhiêu sách và trong bao lâu?
+  filter={'audience': 'student'}; gold=huit-library-faq; marker='tối đa 3 quyển'
+  1. score=0.257 doc_id=huit-library-faq chunk=19 marker=False
+  2. score=0.235 doc_id=huit-library-faq chunk=6 marker=False
+  3. score=0.208 doc_id=huit-library-faq chunk=8 marker=False
+  A/B (without filter): huit-library-faq, huit-library-faq, ftu-library-rules
+
+Q2. Sách tham khảo của VNUA được mượn bao nhiêu cuốn, trong bao lâu và gia hạn thế nào?
+  filter=None; gold=vnua-library-borrowing; marker='5 cuốn/20 ngày'
+  1. score=0.226 doc_id=ftu-library-rules chunk=2 marker=False
+  2. score=0.204 doc_id=quy-dinh-lam-the-ban-doc chunk=3 marker=False
+  3. score=0.167 doc_id=huit-library-faq chunk=8 marker=False
+
+Q3. Dịch vụ mượn liên thư viện HUIT cho mượn bao nhiêu tài liệu và thời hạn bao lâu?
+  filter=None; gold=huit-interlibrary-loan; marker='2 tài liệu/1 lần mượn'
+  1. score=0.288 doc_id=thu-tuc-thanh-toan-ra-truong chunk=2 marker=False
+  2. score=0.277 doc_id=huit-library-faq chunk=4 marker=False
+  3. score=0.237 doc_id=ftu-library-rules chunk=6 marker=False
+
+Q4. Sinh viên cần làm gì để hoàn tất thanh toán thư viện trước khi ra trường?
+  filter={'audience': 'student'}; gold=thu-tuc-thanh-toan-ra-truong; marker='Trả sách đang mượn'
+  1. score=0.215 doc_id=huit-self-check chunk=1 marker=False
+  2. score=0.189 doc_id=huit-library-faq chunk=14 marker=False
+  3. score=0.177 doc_id=huit-library-faq chunk=8 marker=False
+  A/B (without filter): haui-library-policy, huit-self-check, huit-interlibrary-loan
+
+Q5. Gia hạn tài liệu tự động được thực hiện theo các bước nào?
+  filter={'audience': 'student'}; gold=huit-self-check; marker='Chọn nút GIA HẠN'
+  1. score=0.288 doc_id=huit-self-check chunk=0 marker=False
+  2. score=0.159 doc_id=huit-library-faq chunk=14 marker=False
+  3. score=0.152 doc_id=huit-library-faq chunk=16 marker=False
+  A/B (without filter): huit-self-check, ftu-library-rules, quy-trinh-lam-the-can-bo
+
+========================================================================
+
+Strategy: SentenceChunker
+Loaded 97 chunks from 10 selected documents.
+Embedding backend: mock (MD5-based; rankings are not semantic evidence).
+
+Q1. Người dùng được mượn tối đa bao nhiêu sách và trong bao lâu?
+  filter={'audience': 'student'}; gold=huit-library-faq; marker='tối đa 3 quyển'
+  1. score=0.283 doc_id=huit-library-faq chunk=7 marker=False
+  2. score=0.217 doc_id=huit-library-faq chunk=27 marker=False
+  3. score=0.196 doc_id=huit-library-faq chunk=28 marker=False
+  A/B (without filter): ftu-library-rules, huit-library-faq, ftu-library-rules
+
+Q2. Sách tham khảo của VNUA được mượn bao nhiêu cuốn, trong bao lâu và gia hạn thế nào?
+  filter=None; gold=vnua-library-borrowing; marker='5 cuốn/20 ngày'
+  1. score=0.273 doc_id=huit-library-faq chunk=24 marker=False
+  2. score=0.257 doc_id=ftu-library-rules chunk=7 marker=False
+  3. score=0.217 doc_id=ftu-library-rules chunk=12 marker=False
+
+Q3. Dịch vụ mượn liên thư viện HUIT cho mượn bao nhiêu tài liệu và thời hạn bao lâu?
+  filter=None; gold=huit-interlibrary-loan; marker='2 tài liệu/1 lần mượn'
+  1. score=0.385 doc_id=huit-library-faq chunk=10 marker=False
+  2. score=0.347 doc_id=haui-library-policy chunk=21 marker=False
+  3. score=0.299 doc_id=ftu-library-rules chunk=2 marker=False
+
+Q4. Sinh viên cần làm gì để hoàn tất thanh toán thư viện trước khi ra trường?
+  filter={'audience': 'student'}; gold=thu-tuc-thanh-toan-ra-truong; marker='Trả sách đang mượn'
+  1. score=0.242 doc_id=huit-library-faq chunk=7 marker=False
+  2. score=0.233 doc_id=huit-library-faq chunk=3 marker=False
+  3. score=0.215 doc_id=huit-library-faq chunk=13 marker=False
+  A/B (without filter): ftu-library-rules, huit-library-faq, huit-library-faq
+
+Q5. Gia hạn tài liệu tự động được thực hiện theo các bước nào?
+  filter={'audience': 'student'}; gold=huit-self-check; marker='Chọn nút GIA HẠN'
+  1. score=0.257 doc_id=quy-dinh-lam-the-ban-doc chunk=0 marker=False
+  2. score=0.176 doc_id=thu-tuc-thanh-toan-ra-truong chunk=0 marker=False
+  3. score=0.152 doc_id=huit-library-faq chunk=1 marker=False
+  A/B (without filter): quy-dinh-lam-the-ban-doc, haui-library-policy, thu-tuc-thanh-toan-ra-truong
+
+========================================================================
+
+Strategy: RecursiveChunker
+Loaded 69 chunks from 10 selected documents.
+Embedding backend: mock (MD5-based; rankings are not semantic evidence).
+
+Q1. Người dùng được mượn tối đa bao nhiêu sách và trong bao lâu?
+  filter={'audience': 'student'}; gold=huit-library-faq; marker='tối đa 3 quyển'
+  1. score=0.190 doc_id=huit-library-faq chunk=0 marker=False
+  2. score=0.145 doc_id=huit-library-faq chunk=16 marker=False
+  3. score=0.107 doc_id=dich-vu-su-dung-phong-hop-nhom chunk=2 marker=False
+  A/B (without filter): huit-library-faq, haui-library-policy, ftu-library-rules
+
+Q2. Sách tham khảo của VNUA được mượn bao nhiêu cuốn, trong bao lâu và gia hạn thế nào?
+  filter=None; gold=vnua-library-borrowing; marker='5 cuốn/20 ngày'
+  1. score=0.204 doc_id=huit-library-faq chunk=10 marker=False
+  2. score=0.169 doc_id=quy-dinh-lam-the-ban-doc chunk=1 marker=False
+  3. score=0.155 doc_id=huit-library-faq chunk=13 marker=False
+
+Q3. Dịch vụ mượn liên thư viện HUIT cho mượn bao nhiêu tài liệu và thời hạn bao lâu?
+  filter=None; gold=huit-interlibrary-loan; marker='2 tài liệu/1 lần mượn'
+  1. score=0.320 doc_id=haui-library-policy chunk=1 marker=False
+  2. score=0.278 doc_id=ftu-library-rules chunk=5 marker=False
+  3. score=0.217 doc_id=huit-interlibrary-loan chunk=5 marker=False
+
+Q4. Sinh viên cần làm gì để hoàn tất thanh toán thư viện trước khi ra trường?
+  filter={'audience': 'student'}; gold=thu-tuc-thanh-toan-ra-truong; marker='Trả sách đang mượn'
+  1. score=0.307 doc_id=dich-vu-su-dung-phong-hop-nhom chunk=2 marker=False
+  2. score=0.256 doc_id=huit-library-faq chunk=1 marker=False
+  3. score=0.256 doc_id=huit-self-check chunk=1 marker=False
+  A/B (without filter): dich-vu-su-dung-phong-hop-nhom, huit-interlibrary-loan, huit-library-faq
+
+Q5. Gia hạn tài liệu tự động được thực hiện theo các bước nào?
+  filter={'audience': 'student'}; gold=huit-self-check; marker='Chọn nút GIA HẠN'
+  1. score=0.261 doc_id=huit-library-faq chunk=7 marker=False
+  2. score=0.252 doc_id=huit-self-check chunk=0 marker=False
+  3. score=0.217 doc_id=huit-library-faq chunk=3 marker=False
+  A/B (without filter): huit-library-faq, huit-self-check, huit-library-faq
+

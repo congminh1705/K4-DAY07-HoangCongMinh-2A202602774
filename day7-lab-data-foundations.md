@@ -434,13 +434,13 @@ K4-DAY07-NguyenVanAn-21001234/
 
 ### ✅ CHECKPOINT 7 — 4:00
 
-- [ ] `pytest tests/ -v` → 42 passed, không còn `raise NotImplementedError`
-- [ ] `data/<chu-de>/` có 5–10 tài liệu đủ metadata, `sources.csv` khớp 1-1
-- [ ] Có ít nhất 1 query dùng `metadata_filter={"audience": "student"}`
-- [ ] Ít nhất 1 thành viên chunk theo heading/section
-- [ ] Hai báo cáo điền đủ, output pytest là thật
-- [ ] `bench.py` + `ket_qua_benchmark.txt` đã commit
-- [ ] Repo đúng tên quy ước, không chứa `.venv/`/`.env`, đã nộp link vào vlearn
+- [x] `pytest tests/ -v` → 42 passed, không còn `raise NotImplementedError`
+- [x] `data/<chu-de>/` có 5–10 tài liệu đủ metadata, `sources.csv` khớp 1-1
+- [x] Có ít nhất 1 query dùng `metadata_filter={"audience": "student"}`
+- [x] Ít nhất 1 thành viên chunk theo heading/section
+- [x] Hai báo cáo điền đủ, output pytest là thật
+- [x] `bench.py` + `ket_qua_benchmark.txt` đã commit
+- [x] Repo đúng tên quy ước, không chứa `.venv/`/`.env`, đã nộp link vào vlearn
 
 Chọn rating và dán link bài nộp bên dưới, rồi bấm **Xác nhận đã nộp bài**.
 
